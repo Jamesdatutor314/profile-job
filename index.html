@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+        }
+
+        header .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .about {
+            background-color: #f9f9f9;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+
+        .skills-content {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-item {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .education-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .education-item p {
+            margin: 0;
+            color: #666;
+        }
+
+        .experience-item {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #764ba2;
+            border-radius: 4px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .experience-item p {
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .job-item {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #4CAF50;
+            border-radius: 4px;
+        }
+
+        .job-header h3 {
+            margin-bottom: 0.25rem;
+            color: #333;
+        }
+
+        .job-header p {
+            margin: 0;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .job-item ul {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .job-item li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>James</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Welcome to My Profile</h2>
+            <p>Data Analyst | Machine Learning Enthusiast | Mathematics Educator | Problem Solver</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Results-Driven Data Analyst leveraging a background in mathematics and education. Proven leader adept at explaining complex ideas in an "easy to understand" way. Strong ability to use statistics to effectively determine predictions while evaluating model performance, identifying correlations, and manipulating datasets. Critical thinker recognized for creative problem-solving and effective collaborative communication. Devoted advocate for evidence-based findings. Team player skilled at forging and nurturing workplace relationships. Adept at communicating impactful insights and encouraging a culture of curiosity.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-content">
+                <p style="font-size: 1.05rem; line-height: 1.8;">
+                    <strong>Programming Languages:</strong> Python | R | Octave<br>
+                    <strong>Statistical & ML Tools:</strong> Jupyter Notebook | R Studio | Pandas | Scikit-Learn | NumPy | Seaborn | Matplotlib | SciPy<br>
+                    <strong>Data & Analysis:</strong> SQL | Data Wrangling | Data Cleaning | Data Visualization | Machine Learning | Regression Analysis | Statistical Analysis | Probability<br>
+                    <strong>Tools & Platforms:</strong> Github | Advanced Excel | LaTeX
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="about" id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master of Data Science | Machine Learning</h3>
+                <p><strong>Southern Methodist University</strong> | Current Candidate</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Science in Applied Mathematics</h3>
+                <p><strong>Southern Connecticut State University</strong> | 2022 | Data Science Minor</p>
+            </div>
+            <div class="education-item">
+                <h3>Associates of Liberal Arts & Sciences</h3>
+                <p><strong>Gateway Community College</strong> | 2014</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Relevant Data Science Experience</h2>
+            <div class="experience-item">
+                <h3>Statistical Analysis on Price of Pizza</h3>
+                <p>
+                    Performed descriptive statistics analysis on pizza dataset utilizing summary statistics, histogram, scatter, line, and box plots to identify variable distributions and correlations. Determined if there was a significant association between the price of pizza and toppings by implementing inference statistics, including the Chi-Square test of Independence. Utilized feature engineering to manipulate and consolidate the raw pizza dataset into a standardized format for statistical analysis.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>NBA Playoffs Outcome Prediction</h3>
+                <p>
+                    Performed exploratory data analysis on the NBA playoffs dataset utilizing summary statistics, histograms, scatter, and box plots to identify variable distributions, significance, and correlations. Wrangled data through encoding, outlier detection, and imputation to ensure data quality. Grid searched stratified K-Fold CV KNN model parameters to achieve an optimal F1 score of 0.8 while avoiding model overfit to training data. Applied borderline SMOTE to improve the class imbalance of target variables, enhancing model performance.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>Business Profit Prediction Using Multiple Linear Regression</h3>
+                <p>
+                    Translated business profit prediction problem into solvable ML challenge by leveraging economic variables, revealing average profit per shareholder equity, advertising-to-sales ratio, and market shares as the most influential factors to profit. Iterated through 64 possible models to identify the optimal model with R² of 0.86 while minimizing Type I errors. Validated model assumptions and significance through hypothesis testing on coefficients. Identified outliers utilizing standardized jackknives, cooks, and leverage residuals.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>Time Series Prediction on Exchange Rates</h3>
+                <p>
+                    Verified autocorrelation, stationarity, and seasonality properties of time series. Selected appropriate models and parameters based on time series properties. Evaluated model performance based on AIC and RMSE.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section class="about" id="professional">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="job-item">
+                <div class="job-header">
+                    <h3>Private Tutor</h3>
+                    <p><strong>Wyzant</strong> | New Haven, CT | 5/2015 – Present</p>
+                </div>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Provide online tutoring in Python, R, Data Science, Statistics, Algebra, Pre-Calculus, Calculus I-III, Differential Equations, Linear Algebra, Probability, Proofs, and Test Prep</li>
+                    <li>Promote learning strategies while encouraging critical thinking</li>
+                    <li>Maintain a 100% positive feedback rate by concisely addressing clients' questions and ensuring understanding of mathematical concepts</li>
+                </ul>
+            </div>
+            <div class="job-item">
+                <div class="job-header">
+                    <h3>Education Assistant & Test Proctor</h3>
+                    <p><strong>Gateway Community College</strong> | New Haven, CT | 9/2013 – Present</p>
+                </div>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Serve as a head math tutor, providing in-person and online tutoring services to college clients from developmental to advanced math</li>
+                    <li>Effectively explain complicated mathematical concepts clearly and concisely</li>
+                    <li>Function as a proctor while maintaining confidentiality and security of all testing materials and logs</li>
+                    <li>Facilitate the TEAS and CLEP exams, aiding in assessing potential program candidates</li>
+                    <li>Increased independent learning 90% by guiding students through innovative learning strategies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 James. All rights reserved.</p>
+    </footer>
+</body>
+</html>
